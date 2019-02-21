@@ -7,7 +7,7 @@
 //------------------------------------------------------------------------------------------------
 // * Enable/disable major OpenStage functions 
 //
-#define DO_LCD      //Uncomment this line to enable enable LCD character display
+define DO_LCD      //Uncomment this line to enable enable LCD character display
 #define DO_GAMEPAD  //Uncomment this line to enable PS3 DualShock as an input device
 #define PCB         //This is uncommented if the user has an OpenStage PCB
 
@@ -62,9 +62,10 @@ const byte numAxes=3; //Set this to the number of axes on you system (values 1 t
 // be different on different axes. The arrays that follow specify the properties of the steppers
 // on each axis. You can choose which of these axes to enable by commenting or uncommenting the
 // definitions below. 
+// Kasaragod 20190213 testing for two axes
 #define AXIS_1
 #define AXIS_2
-#define AXIS_3
+//#define AXIS_3
 //#define AXIS_4
 
 
@@ -72,7 +73,7 @@ const byte numAxes=3; //Set this to the number of axes on you system (values 1 t
 // Micrometer gear ratios on X,Y,Z in microns per revolution.
 // NOTE: in this case and all others, unused axes can have any value. Values of unused axes
 // are simply not read.  
-unsigned short gearRatio[maxAxes]={635,635,250,635}; 
+unsigned short gearRatio[maxAxes]={500,500,500,500}; 
 
 
 // fullStep

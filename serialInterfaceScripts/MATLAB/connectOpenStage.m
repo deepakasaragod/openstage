@@ -33,7 +33,7 @@ function OS=connectOpenStage(DEV)
 
 if nargin==0
     if ispc
-      DEV='COM4'; %Might want to modify this to your default port
+      DEV='COM1'; %Might want to modify this to your default port
     else
       DEV='/dev/tty.usbmodemfd121';
     end

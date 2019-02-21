@@ -83,8 +83,9 @@ void setup() {
   }
 
   //Initialise the 20 by 4 LCD display 
+  // Kasaragod 20190213 modified to include 16 by 2 LCD panel DFRobot LCD Keypad Shield V1.1
   #ifdef DO_LCD
-   lcd.begin(20,4);               
+   lcd.begin(16,2);               
    lcd.home ();                   
    lcd.clear();
   #endif
